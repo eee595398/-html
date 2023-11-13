@@ -1,0 +1,254 @@
+body{
+    height: 1080px;
+    width: 1920px;
+
+}
+
+
+button {
+    cursor: pointer;
+}
+
+header {
+    
+    height: 8%;
+    display: flex;
+    background-color: #D7F0FF;
+  
+    
+}
+
+header>a{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8%;
+    cursor: pointer;
+    font-size: 30px
+}
+
+
+
+
+
+/* 검색창 */
+nav{
+    width: 80%;
+    padding-top: 1%;
+    border: none; 
+
+}
+
+nav>form{
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+
+}
+
+
+#search{
+    height: 60%;
+    width: 50%;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: none;
+
+  
+}
+
+
+
+input{
+    width: 100%;
+    height: 60%;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 20px;
+    padding: 2% 6%;
+    font-weight: bold;
+ 
+}
+
+#search>button{
+    position: absolute;
+    border: none;
+    outline: none;
+    background: none;
+    margin-left: 90%;
+
+
+}
+
+
+.right_button{
+    width: 20%;
+    display: flex;
+    margin-right: 5%;
+}
+
+
+.right_button>div{
+    
+    flex: 1;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+
+
+   
+}
+
+header>div>div:nth-child(1){
+
+    align-items: center;
+
+
+}
+
+
+#upload{
+
+    height: 70%;
+    width: 100px;
+    font-size: 1.3rem;
+    font-weight:bold;
+    background-color: white;
+    font-weight:bold;
+
+}
+
+
+/* 검색 버튼 이미지 */
+#search_icon{
+
+    height: 30px;
+
+}
+
+
+/* ///////////////////////////////////////////////////////////////////// */
+
+
+
+.chatting_choose{
+    height: 600px;
+    width: 400px;
+   
+   }
+   
+   .chatting_title{
+       height: 10%;
+       border-bottom: 1px solid black;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       font-size: 2rem;
+       font-weight: bold;
+   }
+   
+   .chatting_body{
+       height: 90%;
+     
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+   
+   button{
+   
+       height: 60%;
+       width: 600%;
+       background-color: #7A87FF;
+       font-weight: bold;
+       font-size: 2rem;
+        margin-right: 8%;
+        margin-left: 8%;
+       border-radius: 10%;
+       border: none;
+   
+   }
+   
+   #all_chat{
+   
+       background-color: #FFDE30;
+   }
+
+   /* ////////////////////////////////////////////////////////////////// */
+
+   main{
+
+    display: flex;
+  
+   }
+
+   main>div:nth-child(1){
+
+    width: 13%;
+
+   }
+
+/* 사이드메뉴//////////////////////////////////// */
+aside{
+height: 100%;
+
+}
+
+.menu{
+
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+
+
+}
+
+.menu>a{
+    display: flex;
+   
+    flex: 1;
+    font-size: 2rem;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_block{
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#login{
+
+    width: 200px;
+    height: 100px;
+    background-color: #42B0FF;
+    border-radius: 50px;
+    margin-bottom: 30%;
+
+}
+
+
+
+/* //////////////////////// */
+   main>div:nth-child(2){
+
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+
+
+   }

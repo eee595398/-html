@@ -1,0 +1,46 @@
+body{
+    width: 1920px;
+    height: 500px;
+}
+.chatting_choose{
+ height: 400px;
+ width: 800px;
+
+}
+
+.chatting_title{
+    height: 20%;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.chatting_body{
+
+    height: 80%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+
+    height: 80%;
+    width: 30%;
+    background-color: #7A87FF;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0 40px 0 40px;
+    border-radius: 10%;
+    border: none;
+
+}
+
+#all_chat{
+
+    background-color: #FFDE30;
+}

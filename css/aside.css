@@ -1,0 +1,47 @@
+aside{
+    height: 600px;
+    width: 10%;
+    float: left;
+    
+    }
+    
+    .menu{
+    
+        display: flex;
+        flex-direction: column;
+        height: 60%;
+    
+    
+    }
+    
+    .menu>a{
+        display: flex;
+       
+        flex: 1;
+        font-size: 2rem;
+        font-weight: bold;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .login_block{
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    
+    #login{
+    
+        width: 200px;
+        height: 100px;
+        background-color: #42B0FF;
+        border-radius: 50px;
+        margin-bottom: 30%;
+        font-size: 2rem;
+        border: none;
+    
+    }
+    

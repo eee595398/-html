@@ -1,0 +1,177 @@
+body{
+    width: 1920px;
+    height: 1080px;
+    margin: 0; 
+    padding: 0; 
+}
+
+button,a {
+    cursor: pointer;
+}
+
+
+header{
+    height: 100x;
+    width: 100%;
+    background-color: #BDBFF8;
+    display: flex;
+
+}
+
+
+.title1{
+
+    display: flex;
+    width: 20%;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.title2{
+
+    display: flex;
+    width: 80%;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.nowPepole{
+
+    margin-left: 10%;
+
+}
+
+
+/* ///////////////// */
+
+/* 사이드메뉴 */
+aside{
+    height: 60%;
+    width: 10%;
+    float: left;
+    
+    }
+    
+    .menu{
+    
+        display: flex;
+        flex-direction: column;
+        height: 60%;
+    
+    
+    }
+    
+    .menu>a{
+        display: flex;
+       
+        flex: 1;
+        font-size: 2rem;
+        font-weight: bold;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .login_block{
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    
+    #login{
+    
+        width: 200px;
+        height: 100px;
+        background-color: #42B0FF;
+        border-radius: 50px;
+        margin-bottom: 30%;
+        font-size: 2rem;
+        border: none;
+    
+    }
+    
+
+/* //////////// */
+
+/* 채팅창 */
+
+main{
+
+    height: 80%;
+    display: flex;
+}
+
+
+main>.mainSide{
+
+    width: 10%;
+    background-color: #D7F0FF;
+}
+
+
+.main_chat{
+
+width: 90%;
+
+}
+
+
+.main_view{
+
+    height: 80%;
+}
+
+.main_chat>div:nth-child(2){
+    height: 20%;
+    background-color: #D1D2EC;
+}
+
+
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+
+}
+
+input{
+
+    height: 70px;
+    width: 70%;
+    margin-right: 5%;
+    border-radius: 10px;
+    border: none;
+}
+
+
+#submit{
+    padding-top: 1%;
+    border: none;
+    background-color: #D1D2EC;
+
+}
+
+
+
+/* 돌아가기 버튼////// */
+
+#back{
+    background-color: #FFEF5C;
+    border:none;
+    font-weight: bold;
+    height: 100px;
+    width: 100px;
+    margin: 500px 0 0 20px;
+    border-radius: 15px;
+
+
+}
+
