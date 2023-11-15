@@ -49,13 +49,29 @@ header{
 
 /* ///////////////// */
 
-/* 사이드메뉴 */
+
 /* 사이드 */
+@media screen and (max-width: 900px) {
+    aside {
+        display: none; /* 화면이 작아지면 사이드바를 감춘다 */
+    }
+
+    main {
+        margin-left: 0; /* 사이드바가 없으므로 여백을 없앤다 */
+        width: 100%; /* 전체 너비로 확장 */
+    }
+}
+
+
+
 aside{
     height: 600px;
-    width: 10%;
+    width: 8%;
     float: left;
-    
+    min-width: 200px;
+    position: fixed;
+    z-index: 2;
+    margin-top:8%;
     }
     
     .menu{
@@ -107,6 +123,7 @@ main{
 
     height: 80%;
     display: flex;
+    margin-left: 10%;
 }
 
 

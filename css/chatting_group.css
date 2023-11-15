@@ -232,6 +232,7 @@ width: 90%;
 .main_view{
 
     height: 80%;
+    overflow: 0 scroll;
 }
 
 .main_chat>div:nth-child(2){
