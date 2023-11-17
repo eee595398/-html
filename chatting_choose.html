@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>채팅방 고르기</title>
     <link rel="stylesheet" href="css/chatting_choose.css">
+    <script src="https://kit.fontawesome.com/69a462bb6c.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
-        <a>
+        <div class="logo_img">
             <img src="images/Rectangle 110.png" id="logo">
-            <div>Surping</div>
-        </a>
+        </div>
+        <a id="logo">Surfing</a>
         <nav>
             <form action="#">
                 <fieldset id="search">
-                    <input type="search" placeholder="검색" >
+                    <input id="search_id" type="search" placeholder="검색" >
                     <button>
                         <img src="images/Rectangle 112.png" id="search_icon">
                     </button>
@@ -25,29 +27,41 @@
 
         <div class="right_button">
             <div>
-                <img src="images/알림 아이콘.png">
+                <i id="bell" class="fa-solid fa-bell" style="color: #ffffff;"></i>
             </div>
             <div>
-                <button id="upload">업로드</button>
+                <button class="w-btn-neon2" type="button">
+                    업로드
+                </button>
             </div>
         </div>
     </header>
 
-
-    <aside>
+    <aside class="left">
         <div class="menu">
-            <a>프로필</a>
-            <a>팔로우</a>
-            <a>메세지</a>
-            <a>채팅</a>
+            <nav>
+                <i id="sideIcon" class="fa-regular fa-user" style="color: #002b75;"></i>
+                <a>Profile</a>
+            </nav>
+            <nav>
+                <i id="sideIcon" class="fa-solid fa-user-group" style="color: #053d9e;"></i>
+                <a>Follow</a>
+            </nav>
+            <nav>
+                <i id="sideIcon" class="fa-solid fa-envelope" style="color: #073e9c;"></i>
+                <a>Message</a>
+            </nav>
+            <nav>
+                <i id="sideIcon" class="fa-regular fa-message" style="color: #1b4998;"></i>
+                <a>chatting</a>
+            </nav>
         </div>
         <div class="login_block">
-            <button id="login">
-                 로그인 
+            <button class="w-btn w-btn-gra1" type="button">
+                로그인
             </button>
         </div>
     </aside>
-
 
     <main>
 
