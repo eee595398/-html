@@ -289,38 +289,42 @@ aside{
         align-items: center;
 
 
+
     }
+
+
 
 
     .roomMake-title{
 
-        margin: 8% 20% 2% 0%;
+        margin: 8% 15% 2% 0%;
         height: 10%;
-        width: 40%;
+        width: 45%;
         font-weight: bold;
         display: flex;
         align-items: end;
         font-size: 1.5rem;
-        
-
+        border-bottom:2px solid black;
+        /* border:2px solid black; */
+        padding-left: 2%;
     }
 
 
       /* 설정(제목) 밑줄  */
-      .roomMake-title::before{
+      /* .roomMake-title::before{
     
         content : "";
         position: absolute;
         left    : 28%;
         bottom  : 0;
         height  : 80%;
-        width   : 50%;  /* or 100px */
+        width   : 50%;  
         border-top:2px solid black;
        
     
     
     }
-    
+     */
 
 
     .content-1{
@@ -374,6 +378,94 @@ aside{
     
         }
     
+
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* 투명한 검은 배경 */
+            z-index: 9999; /* 모달 창 위에 표시되도록 설정 */
+        }
+        
+
+
+        /* 숨겨진 태그 리스트 */
+        .tag-container{
+
+            width: 700px;
+            height: 500px;
+            border: 1px solid black;
+
+              position: relative;
+        }
+
+        /* 모달 창 닫기 버튼*/
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+          }
+
+
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        
+
+
+
+
+        /* 태그리스트 */
+        .tagList{
+            border: 1px solid black;
+            width: 100%;
+            height: 50%;
+            
+
+        }
+
+        .firstList{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            border: 1px solid black;
+            list-style: none;
+            height: 80%;
+            padding: 0;
+            grid-gap: 10px;
+
+        }
+
+        .firstList>li{
+
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .firstList>li>span{
+
+            position: relative;
+            top: 2px;
+            font-size: 13px;
+            color: #0184e5;
+            vertical-align: top;
+        }
+
+
+
+
+
+
     
     
         .room_name>div,.pepole_limit>div,.group_choose>div,
@@ -402,7 +494,7 @@ aside{
     
         .public_or_not div label{
            
-           cursor: pointer;
+       
           
             background-color: white;
             border: none;

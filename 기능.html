@@ -15,8 +15,69 @@
         <input type="text" id="searchBox" placeholder="태그를 추가하세요">
     </div>
 
+
+    <div class="group_choose">
+        <label>채팅그룹선택</label>
+        <div>
+            #<button id="tag-btn">태그는 5개만 선택가능합니다.</button>
+        </div>
+    </div>
+
+    <!-- 숨겨진 태그 리스트 -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="tag-container" id="tag-container">
+            <div class="tagList">
+                <span class="close">&times;</span>
+                <ul class="firstList">
+                    <li>
+                        <a>지역</a>
+                        <span>(13)</span>
+                    </li>
+                    <li>
+                        <a>나이</a>
+                        <span>(13)</span>
+                    </li>
+                    <li>
+                        <a>직업</a>
+                        <span>(13)</span>
+                    </li>
+                    <li>
+                        <a>성별</a>
+                        <span>(13)</span>
+                    </li>
+                    <li>
+                        <a>취미</a>
+                        <span>(13)</span>
+                    </li>
+                    <li>
+                        <a>전체</a>
+                        <span>(13)</span>
+                    </li>
+                </ul>
+            </div> 
+            <div class="tagList">
+                <ul class="secondList">
+                    <li>지역</li>
+                    <li>나이</li>
+                    <li>직업</li>
+                    <li>성별</li>
+                    <li>취미</li>
+                    <li>전체</li>
+                </ul>
+            </div> 
+        </div>
+     </div>
+
+
+
+
     
 </body>
+
+
+
+
+
 <script>
 function addTag(tag) {
     const searchBox = document.getElementById('searchBox');
@@ -28,6 +89,31 @@ function addTag(tag) {
         searchBox.value = `${currentValue} <${tag}></${tag}>`;
     }
 }
+
+
+
+
+var btn = document.getElementById("tag-btn");
+ var modal = document.getElementById("modal-overlay");
+ var span = document.getElementsByClassName("close")[0];
+
+ btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
+
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
 
 
 </script>
