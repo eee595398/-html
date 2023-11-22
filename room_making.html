@@ -67,11 +67,12 @@
         <div class="roomMake-title">채팅방 만들기</div>
         <div class="content-1">
              
-            <form>
+            <form th:action="">
                 <div class="group_choose">
                     <label>채팅그룹선택</label>
                     <div>
-                        #<button id="tag-btn" type="button">태그는 5개만 선택가능합니다.</button>
+                        <button id="tag-btn" type="button">태그는 5개만 선택가능합니다.</button> 
+                        <input type="text" id="tagsInput" name="tag">
                     </div>
                 </div>
                 <!-- 숨겨진 태그 리스트 -->
@@ -81,39 +82,39 @@
                             <span class="close">&times;</span>
                             <ul class="firstList">
                                 <li>
-                                    <a>지역</a>
+                                    <a onclick="showListItem(0)" >지역</a>
                                     <span>(13)</span>
                                 </li>
                                 <li>
-                                    <a>나이</a>
+                                    <a onclick="showListItem(1)">나이</a>
                                     <span>(13)</span>
                                 </li>
                                 <li>
-                                    <a>직업</a>
+                                    <a onclick="showListItem(3)">직업</a>
                                     <span>(13)</span>
                                 </li>
                                 <li>
-                                    <a>성별</a>
+                                    <a onclick="showListItem(4)">성별</a>
                                     <span>(13)</span>
                                 </li>
                                 <li>
-                                    <a>취미</a>
+                                    <a onclick="showListItem(5)">취미</a>
                                     <span>(13)</span>
                                 </li>
                                 <li>
-                                    <a>전체</a>
+                                    <a onclick="showListItem(6)">전체</a>
                                     <span>(13)</span>
                                 </li>
                             </ul>
                         </div> 
                         <div class="tagList">
                             <ul class="secondList">
-                                <li>지역</li>
-                                <li>나이</li>
-                                <li>직업</li>
-                                <li>성별</li>
-                                <li>취미</li>
-                                <li>전체</li>
+                                <li class="list-item">지역</li>
+                                <li class="list-item">나이</li>
+                                <li class="list-item">직업</li>
+                                <li class="list-item">성별</li>
+                                <li class="list-item">취미</li>
+                                <li class="list-item">전체</li>
                             </ul>
                         </div> 
                     </div>
@@ -125,17 +126,18 @@
         
                         <label>공개여부</label>
                         <div>
-                            <input type="checkbox" id="public" name="public" style="display: none;" ></input>
+                            <input type="checkbox" class="public" style="display: none;" value="public"></input>
                             <label for="public" class="custom-checkbox">공개</label>
 
-                            <input type="checkbox" id="public" name="public" style="display: none;" ></input>
-                            <label for="publi" class="custom-checkbox">비공개</label>
+                            <input type="checkbox" class="public" style="display: none;" value="private"></input>
+                            <label class="custom-checkbox">비공개</label>
+                            <input type="password" id="roomPw" placeholder="비밀번호" style="display: none; float: inline-end;" >
                         </div>
                 </div>
                 <div class="pepole_limit">
                     <label>인원제한</label>
                     <div>
-                        <input type="text" id="pepole_limit" placeholder="인원수">
+                        <input type="number" min="2" max="10" id="pepole_limit" placeholder="3~10">
                     </div>
                 </div>
                 <div class="room_name">
@@ -154,8 +156,12 @@
                 <div class="invite">
                     <div class="invi-1">
                         <label>초대하기</label>
-                        <input class="search-nickname" type="text"   placeholder="닉네임을 입력해주세요">
-                            <table class="invite_table">
+                        <input class="search-nickname" id="targetInput" type="text" placeholder="닉네임을 입력해주세요" autocomplete="off" >
+                            <ul id="resultArea">
+                            </ul>    
+                        
+                        
+                        <!-- <table class="invite_table">
                                 <tr>
                                     <th class="table_img">
                                         <img src="images/5e0d9f011a9ad2738de6.jpg">
@@ -174,11 +180,12 @@
                                         <input type="checkbox">선택
                                     </th>
                                 </tr>
-                            </table>
+                            </table> -->
                     </div>
                     <div class="fileUpload">
                         <label>프로필 이미지 선택 </label>
-                        <input type="file" accept="image/jpeg,image/jpg,image/png">
+                        <input type="file" accept="image/jpeg,image/jpg,image/png" onchange="image(this)">
+                        <img id="preview">
                     </div>
                 </div>
 
