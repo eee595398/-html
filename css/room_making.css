@@ -347,6 +347,14 @@ aside{
         width: 100%;
     
     }
+
+
+    .content-1 form>div{
+    
+        margin-bottom: 5px;
+    
+    }
+    
     
     
     
@@ -378,6 +386,16 @@ aside{
             
     
         }
+
+        .group_con{
+            display: flex;
+            margin-bottom: 50px;
+
+
+        }
+
+        
+        #tagsInput:focus {outline:none;}
 
  
 
