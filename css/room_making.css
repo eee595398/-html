@@ -379,7 +379,7 @@ aside{
         /* 채팅그룹태그선택 */
         .group_choose{
             height: 10%;
-            width: 30%;
+            width: 100%;
             display: inline-block;
             vertical-align: middle;
             text-align: left;
@@ -393,6 +393,14 @@ aside{
 
 
         }
+
+
+        #tagsInput{    
+            width: 15%; 
+        
+        }
+        
+       
 
         
         #tagsInput:focus {outline:none;}
@@ -410,6 +418,7 @@ aside{
             z-index: 9999; /* 모달 창 위에 표시되도록 설정 */
         }
         
+
 
 
         /* 숨겨진 태그 리스트 */
@@ -455,17 +464,24 @@ aside{
         .tagList{
             border: 1px solid black;
             width: 100%;
-            height: 50%;
+            height: 20%;
             
 
         }
+
+        .tagList-detail{
+            height: 70%;
+
+        }
+
+
 
         .firstList{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             border: 1px solid black;
             list-style: none;
-            height: 80%;
+            height: 60%;
             padding: 0;
             grid-gap: 10px;
 
@@ -477,6 +493,7 @@ aside{
             display: flex;
             align-items: center;
             justify-content: center;
+            list-style: none;
             
         }
 
@@ -493,10 +510,37 @@ aside{
         }
 
 
+        /* 채팅그룹 세부 종류 선택 */
 
+        .secondList{
+            height: 100%;
+            display: flex;
+            gap: 10px;
+            border: solid 1px #00ffcb;
+            padding: 0;
 
+        }
 
+        .list-item{
 
+  
+            border: solid 1px #00ffcb;
+            height: 100%;
+            width: 100%;
+            list-style: none;
+          
+        }
+
+        .detail-tiem{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10%;
+            border: solid 1px #00ffcb;
+            cursor: pointer;
+        
+        }
     
     
         .room_name>div,.pepole_limit>div,.group_choose>div,
@@ -519,7 +563,7 @@ aside{
     
         
     
-    
+      
     
     
     
